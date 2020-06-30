@@ -79,6 +79,12 @@ html{
 }
 
 @media (max-width:576px){
+    .navbar{
+        position: relative !important;
+        top: 0;
+        left: 0;
+        background-color: #102568;
+    }
     .div-item{
         width: 100%;
     }
