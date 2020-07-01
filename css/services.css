@@ -1,0 +1,32 @@
+/* Header Section */
+.rooms {
+    background-color: aquamarine;
+    background-image: url("../assets/services-page/rooms-background.png");
+    width: 1440px;
+    height: 433px;
+    padding: 4px;
+
+}
+
+.our-rooms {
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.75rem;
+    line-height: 90px;
+
+    color: #FFFFFF;
+}
+
+.fa-arrow-down {
+    color: #FFFFFF;  
+}
+
+.room-arrow {
+    text-align: center;
+    position: absolute;
+    left: 38%;
+    top: 27%;
+}
+
