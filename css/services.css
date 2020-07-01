@@ -30,6 +30,7 @@
     top: 27%;
 }
 
+
 /* Descriptive Text Section */
 .rooms-text {  
 
@@ -120,3 +121,30 @@ i p {
 }
 
 
+/* Responsiveness */
+@media screen and (max-width: 900px){
+    .room-arrow {
+        left: 25%;
+    }
+
+    .card-price {
+        bottom: 160px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .room-arrow {
+        left: 20%;
+        top: 27%;
+    }
+
+    .card-price {
+        bottom: 133px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .room-arrow {
+        left: 10%;
+    }
+}
