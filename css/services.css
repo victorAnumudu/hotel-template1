@@ -43,3 +43,80 @@
     color: #102568;
 }
 
+
+/* Rooms Pricing Section */
+.card-img-top {
+    position: relative;
+}
+
+.card-price {
+    display: inline;
+    background-color: rgba(40, 59, 119, 0.7);
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 133px;
+    left: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 5px 10px;    
+}
+
+.card-body {
+    background-color: #283B77;
+    padding: 0;
+}
+
+.card:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+hr {
+    height: 2px;
+    background: #FFFFFF;
+    width: 410px;
+}
+
+div h4 {
+    margin: 15px 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+    }
+
+.fa-expand-arrows-alt, .fa-bed {
+    color: #FFFFFF;
+}
+
+.descrip {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px;
+}
+
+i p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 28px;
+    display: inline;
+}
+
+.row {
+    margin: 0 30px 20px 30px;
+}
+
+.card {
+    border: none;
+    padding: 10px;
+}
+
+
