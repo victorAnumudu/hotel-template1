@@ -1,111 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micah-Hotels</title>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sky Light Hotels</title>
+      <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
-    <!-- bootstrap css link -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <!-- nav-header css link -->
-    <link rel="stylesheet" href="css/nav-footer.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    
-    <!-- overall page container -->
+    <!-- external css link -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+      
+      <!-- css link -->
+      <link rel="stylesheet" href="./css/nav-footer.css">
+      <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>   
+  <!-- overall page container -->
     <div class="container-fluid p-0">
 
-        <!-- navigation section -->
-     <nav class="navbar navbar-expand-md navbar-dark px-3 py-0 position-absolute w-100">
-        <!-- Brand -->
-        <a class="navbar-brand d-flex flex-nowrap" href="index.html">
-            <img src="assets/logo.png" class="my-logo img-fluid" alt="logo"> 
-            <span class="logo-text">Sky Light <br> Hotels</span>
-        </a>
-      
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item ml-2">
-                <a class="nav-link" href="contact.html">Contact us</a>
-            </li>
-          </ul>
-        </div>
-      </nav> 
-      <!-- END of navigation section -->
+    <!-- header-container -->
+      <div class="container-fluid py-2 px-5 header-container">
 
-      <!-- slide section -->
-      <div class="my-slide container-fluid p-0">
-        <img src="assets/home-page/my-slide/slide1.png" class="img-fluid" alt="slide image">
+        <!-- navigation -->
+        <div id="navigation"> </div>
+        <!-- end of navigation -->
+        
+          <!-- book a room form -->
+          <div class="row justify-content-between">
+            <div class="col-xl-5 pl-4  pr-4 intro-row">
+                <header class="intro">
+                  <h1 class="intro-title">Discover Luxury & Comfortability</h1>
+                </header>
+                <section>
+                  <p class="intro-text">
+                    At Sky Light Hotels, we offer you a serene home away from home environment. Your comfortability is our topmost priority
+                  </p>
+                </section>
+            </div>
+
+            <div class="col-xl-5 mb-2 px-5 booking">
+              <header class="intro">
+                <h1 class="book-title">book a room</h1>
+              </header>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="firstname" placeholder="first name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="lastname" placeholder="last name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="emailAddress" placeholder="email address">
+                </div>
+                <div class="form-group">
+                  <input type="date" class="form-control" id="date-input" placeholder="date of check-in">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control" id="number-input" placeholder="number of guest" min="1">
+                </div>
+                <button type="submit" class="btn btn-primary" id="book-btn">Sign in</button>
+              </form>
+            </div>
+          </div>
+          <!-- end of book room form -->
       </div>
-      <!-- END of slide section -->
+    <!-- end of header-container -->
 
-      <!-- footer section -->
-      <div class="container-fluid my-footer p-2 d-sm-flex flex-wrap justify-content-around">
+      <!-- about section -->
+        <div class="container-fluid p-5 bg-color">
+          <div class="row justify-content-between">
 
-        <div class="div-item mb-3 p-1 m-sm-4 text-center text-sm-left">
-            <a class="d-flex flex-nowrap justify-content-center justify-content-sm-start" href="index.html">
-                <img src="assets/logo2.png" class="my-footer-logo" alt="logo"> 
-                <span class="logo-text">Sky Light <br> Hotels.</span>
-            </a>
-            <h4 class="footer-header my-2">SKY LIGHT INT</h4>
-            <p class="footer-copyright m-0 p-0">&copy; 2020 sky Lights Hotels. <br> All Rights reserved</p>
+            <div class="col-xl-5 p-0">
+              <header class="intro">
+                <h1 class="title color-blue">About Us</h1>
+              </header>
+              <p class="text-design color-blue">
+                We have 72 comfortably equipped rooms, including two suites: The Delux Suite and the Ambassador Suite, 
+                with over one hundred metres of surface area, which are sure to awe even the most demanding Guests. 
+                We offer 7 rooms, where we have been preparing family and business meetings already for 15 years. 
+                The SkyLight Hotel is not merely the building but, above all, its people. We are a team of professionals, 
+                who can organise every event end-to-end.
+              </p>
+            </div>
+
+            <div class="col-xl-6 about-pix mt-3 px-0">
+                <img src="./assets/images/image1.png" alt="hotel lobby" id="lobby">
+            </div>
+
+          </div>
         </div>
+      <!-- end of about section -->
 
-        <div class="div-item mb-3 p-1 m-sm-4 text-center text-sm-left">
-          <h4 class="footer-header my-2">Our Patners</h4>
-          <a href="#" class="footer-anchor d-block">HNG Internship</a>
-          <a href="#" class="footer-anchor d-block">Pepsi</a>
-          <a href="#" class="footer-anchor d-block">Figma</a>
-          <a href="#" class="footer-anchor d-block">Adobe XD</a>
-        </div>
 
-        <div class="div-item mb-3 p-1 m-sm-4 text-center text-sm-left">
-          <h4 class="footer-header my-2">Customer Care</h4>
-          <a href="#" class="footer-anchor d-block">Make Reservations Now</a>
-          <a href="#" class="footer-anchor d-block">FAQ</a>
-          <a href="#" class="footer-anchor d-block">Payment Options</a>
-          <a href="#" class="footer-anchor d-block">Hotel Arrivals.</a>
-        </div>
+      <!-- suites section -->
+        <div class="container-fluid px-5 pb-4 bg-color">
 
-        <div class="div-item mb-3 p-1 m-sm-4 text-center text-sm-left">
-          <h4 class="footer-header my-2">Subscribe for More</h4>
-          <input type="text" placeholder="Enter Email" class="footer-input d-block container-fluid rounded">
-          <button class="btn p-1 btn-sm footer-button my-2">Subscribe</button>
+        <div class="row justify-content-between">
+          <div class="col-lg-5 align-self-center p-0">
+            <header class="intro">
+              <h1 class="title mb-5 color-blue">Rooms and Suites</h1>
+            </header>
+            <p class="suites-text text-design color-blue">
+              Our Guests can enjoy 72 comfortably equipped rooms, including 11 single rooms, 52 double rooms, 7 LUX highetr standard rooms, as well as 2 Suites: 
+              The Presidential Suite and the Ambassador Suite, with over one hundred metres of space, which delight even the most demanding Guests
+            </p>
+          </div>
+
+        <!-- suites type -->
+          <div class="col-lg-6 suites-pix p-0">
+            <div class="row"> 
+              <div class="col-md-6 py-2">
+                <div class="card">
+                  <img src="./assets/images/Rectangle 11.png" class="card-img-top" alt="standard room">
+                  <div class="card-body suite-card-body py-2">
+                    <p class="card-text">Standard Rooms <br> View Room Specifications <span class="icon"><i class="fa fa-eye-slash" aria-hidden="true"></i></span> </p>
+                  </div>
+                </div>                  
+              </div>
+              <div class="col-md-6 py-2">
+                <div class="card">
+                  <img src="./assets/images/Rectangle 12.png" class="card-img-top" alt="double room">
+                  <div class="card-body suite-card-body py-2">
+                    <p class="card-text">Double Rooms <br> View Room Specifications <span class="icon"><i class="fa fa-eye-slash" aria-hidden="true"></i></span> </p>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-md-6 py-2">
+                <div class="card">
+                  <img src="./assets/images/Rectangle 13.png" class="card-img-top" alt="delux room">
+                  <div class="card-body suite-card-body py-2">
+                    <p class="card-text">Delux Rooms <br> View Room Specifications <span class="icon"><i class="fa fa-eye-slash" aria-hidden="true"></i></span> </p>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-md-6 py-2">
+                <div class="card">
+                  <img src="./assets/images/Rectangle 14.png" class="card-img-top" alt="executive room">
+                  <div class="card-body suite-card-body py-2">
+                    <p class="card-text">Executive Rooms <br> View Room Specifications <span class="icon"><i class="fa fa-eye-slash" aria-hidden="true"></i></span> </p>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+      <!-- end of suites type -->
+
         </div>
 
       </div>
-      <!-- END of footer section -->
+      <!-- end of suites section -->
+
+      <!-- services -->
+        <div class="container-fluid px-5 py-4 bg-color">
+          <header class="mb-4">
+            <h1 class="topic color-blue">Our Services</h1>
+          </header>
+
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <img src="./assets/images/Rectangle 15.png" alt="Laundary" class="img-thumbnail mb-1">
+
+              <div class="card service-card py-2">
+                <div class="card-body p-0">
+                  <h5 class="card-title service-type color-blue">Laundary Services</h5>
+                  <p class="card-text service-card-text color-blue">We offer you the services of a bubble clean fresh cloth during your stay with us, Just as its said Cleanliness is next to Godliness.</p>
+                  <a href="#" class="card-link color-blue">See More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <img src="./assets/images/Rectangle 16.png" alt="Room service" class="img-thumbnail mb-1">
+
+              <div class="card service-card py-2">
+                <div class="card-body p-0">
+                  <h5 class="card-title service-type color-blue">24/7 Room Service</h5>
+                  <p class="card-text service-card-text color-blue">Never worry about coming out or downstairs to place your orders, even our friendly and ever ready room service is there for you 24/7.</p>
+                  <a href="#" class="card-link color-blue">See More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <img src="./assets/images/Rectangle 17.png" alt="CCTV" class="img-thumbnail mb-1">
+
+              <div class="card service-card py-2">
+                <div class="card-body p-0">
+                  <h5 class="card-title service-type color-blue">24/7 CCTV Camera</h5>
+                  <p class="card-text service-card-text color-blue">Amist your comfortability, Your safety is our biggest Concern. Do not worry wether you are in safe hands we Got you Covered any time any day.</p>
+                  <a href="#" class="card-link color-blue">See More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <img src="./assets/images/Rectangle 18.png" alt="Meal" class="img-thumbnail mb-1">
+
+              <div class="card service-card py-2">
+                <div class="card-body p-0">
+                  <h5 class="card-title service-type color-blue">Free Breakfast</h5>
+                  <p class="card-text service-card-text color-blue">Just for the comfortability we promised, We offer our customers free breakfast each day. because breakfast is the most important meal of the day.</p>
+                  <a href="#" class="card-link color-blue">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- end of services -->
+
+      <!-- testimonials --> 
+      <div class="container-fluid px-5 pb-3 bg-color">
+        <header class="mb-3">
+          <h1 class="topic color-blue">Testimonials</h1>
+        </header>
+
+        <div class="row">
+          <div class="col-md-6">
+            <blockquote class="blockquote">
+              <i class="fa fa-quote-left color-blue" aria-hidden="true"></i>
+              <p class="mb-0 quote color-blue">The service at the SkyLight was exceptional. There was absolutely no issue that was not addressed timely and with satisfactory results. 
+                We were particulary impressed with how the hotel staff anticipated our needs (periodically coming by the Board Room to check with us). 
+                Numerous conference attendees commented on the quality of the food, the quality of the service and overall positive attitude toward the conference site. 
+                Particular noteworthy is the longevity of the staff and that sense of investment in the success of every event.</p>
+                <blockquote class="mb-4"><i class="fa fa-quote-right float-right color-blue" aria-hidden="true"></i></blockquote>
+              <footer class="blockquote-footer color-blue">Jim John</footer>
+            </blockquote>            
+          </div>
+
+          <div class="col-md-6">
+            <blockquote class="blockquote">
+              <i class="fa fa-quote-left color-blue" aria-hidden="true"></i>
+              <p class="mb-0 quote color-blue">The hotel staff was beyond exceptional. During the past twenty years I have hosted hundreds of events at dozens of hotels and 
+                I can’t recall ever having things run as smoothly as they did for us at the Skylight. 
+                We had very few “last minute changes” but those we had were handled flawlessly. The F&B quality and presentation was outstanding. 
+                We had numerous compliments from the attendees.</p>
+                <blockquote class="mb-4"><i class="fa fa-quote-right float-right color-blue mb-2" aria-hidden="true"></i></blockquote>
+              <footer class="blockquote-footer color-blue">Ifeoma Ukandu</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of testimonials -->     
+
+  <!-- footer section -->
+      <footer id="footer"> </footer>
+  <!-- end of footer section -->
 
     </div>
-     <!-- END of overall page container -->
+   <!-- end of overall page container -->
 
-     <!-- script files for BOOTSTRAP -->
-     <!-- JS, Popper.js, and jQuery -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-     <!--END of script files for BOOTSTRAP -->
 
-     <!-- Other scripts -->
-    <script src=""></script>
-</body>
+
+
+
+      <!--BOOTSTRAP Scripts-->
+      <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!--BOOTSTRAP Scripts-->
+
+      <!-- jQuery CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- main scripts -->
+      <script src="./javascript/script.js"></script>
+  </body>
+
 </html>
